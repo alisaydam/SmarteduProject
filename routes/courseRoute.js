@@ -8,6 +8,7 @@ router.route('/').post(roleMiddlaware(["teacher", "admin"]), courseController.cr
 router.route('/').get(courseController.getAllCourses); //* http://localhost: 3000/courses requestleri buraya gelir.
 router.route('/:slug').get(courseController.getCourse); //* http://localhost: 3000/courses/id requestleri buraya gelir.
 router.route('/enroll').post(courseController.enrollCourse); //* http://localhost: 3000/courses requestleri buraya gelir.
-
+router.route('/release').post(courseController.releaselCourse); //* http://localhost: 3000/courses requestleri buraya gelir.
 
 module.exports = router;
+ 

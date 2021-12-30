@@ -14,7 +14,7 @@ const app = express();
 //* Connect DB
 mongoose
   .connect(
-    'mongodb+srv://dbUser:y38B!X5kLnrrUY3@cluster0.ezkbv.mongodb.net/smartedu-db?retryWrites=true&w=majority',
+    'mongodb+srv://dbUser:Gandalf2020@cluster0.ezkbv.mongodb.net/smartedu-db?retryWrites=true&w=majority',
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,

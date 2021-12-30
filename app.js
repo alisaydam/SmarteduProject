@@ -14,7 +14,7 @@ const app = express();
 //* Connect DB
 mongoose
   .connect(
-    'mongodb+srv://dbUser:Gandalf2020@cluster0.ezkbv.mongodb.net/smartedu-db?retryWrites=true&w=majority',
+    'mongodb+srv://dbUser:Gandalf2020@cluster0.ezkbv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
@@ -69,4 +69,4 @@ app.use('/users', userRoute);
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
   console.log(`App started on port ${port}`);
-}); 
+});

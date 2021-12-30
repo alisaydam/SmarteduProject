@@ -22,6 +22,9 @@ mongoose
   )
   .then(() => {
     console.log('DB connected successfully...');
+  })
+  .catch((err) => {
+    console.log(err);
   });
 
 //* Temp Engine

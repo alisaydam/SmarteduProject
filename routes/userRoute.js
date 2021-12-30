@@ -13,10 +13,8 @@ router.route('/signup').post(
         .custom((userEmail)=> {
             return User.findOne({email: userEmail}).then(user => {
                 if(user){
-                    return Promise.reject('Email is already taken')
+                  return Promise.reject('Email is already taken');
                 }
-            }).catch((err)=>{
-                console.log(err)
             });
         }),
         body('password').not().isEmpty().withMessage('Please enter a password'),
